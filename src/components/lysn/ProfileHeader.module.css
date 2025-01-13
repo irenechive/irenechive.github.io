@@ -67,6 +67,10 @@
 }
 
 @media screen and (max-width: 37.5rem) {
+  .header {
+    gap: 0.45rem;
+  }
+
   .img-wrap {
     width: 2.75rem;
     height: 2.75rem;

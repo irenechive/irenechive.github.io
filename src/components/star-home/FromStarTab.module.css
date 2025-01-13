@@ -1,0 +1,22 @@
+#tab {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tab:link,
+.tab:visited {
+  padding: 0.25rem 0.5rem;
+  color: var(--color-font-sub);
+  font-size: var(--font-min);
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 1000px;
+}
+
+.tab.active:link,
+.tab.active:visited {
+  color: var(--color-font-dark);
+  font-weight: 700;
+  border-color: var(--color-base-900);
+}

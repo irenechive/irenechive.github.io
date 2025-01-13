@@ -1,0 +1,26 @@
+#main {
+  width: 53.75rem;
+  margin: 4rem auto;
+  position: relative;
+}
+
+#main.small {
+  width: 42rem;
+}
+
+#main.min {
+  width: 38rem;
+}
+
+@media screen and (max-width: 61rem) {
+  #main {
+    margin: 2rem auto;
+  }
+
+  #main,
+  #main.small,
+  #main.min {
+    max-width: 53.75rem;
+    width: 90%;
+  }
+}

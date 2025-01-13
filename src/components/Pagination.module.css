@@ -1,0 +1,44 @@
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
+
+#pagination button {
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-min);
+  font-weight: 500;
+  aspect-ratio: 1;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+#pagination .btn.active {
+  font-weight: 700;
+  border: 1px solid var(--color-base-900);
+  border-radius: 50%;
+}
+
+.arrow button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}

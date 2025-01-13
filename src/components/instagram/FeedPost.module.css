@@ -52,3 +52,9 @@
   font-size: var(--font-min);
   font-weight: 700;
 }
+
+@media screen and (max-width: 37.5rem) {
+  .content {
+    font-size: var(--font-min);
+  }
+}

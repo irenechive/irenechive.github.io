@@ -56,3 +56,9 @@
 .more:visited > svg {
   color: var(--color-lysn-primary);
 }
+
+@media screen and (max-width: 37.5rem) {
+  .title {
+    font-size: var(--font-min);
+  }
+}

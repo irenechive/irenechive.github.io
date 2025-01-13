@@ -15,7 +15,6 @@
 .content {
   display: block;
   margin-top: 0.75rem;
-  /* margin-bottom: 1.5rem; */
   line-height: 1.7;
 }
 
@@ -24,4 +23,11 @@
   height: 100%;
   display: block;
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 37.5rem) {
+  .title,
+  .content {
+    font-size: var(--font-min);
+  }
 }

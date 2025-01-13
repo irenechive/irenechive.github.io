@@ -47,3 +47,10 @@
   color: var(--color-font-sub);
   font-size: var(--font-min);
 }
+
+@media screen and (max-width: 37.5rem) {
+  .title a:link,
+  .title a:visited {
+    font-size: var(--font-min);
+  }
+}

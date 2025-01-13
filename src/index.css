@@ -29,15 +29,15 @@
   --color-base-200: #e2e8f0;
   --color-base-900: #373845;
 
+  --color-orange-100: #fff7ed;
+  --color-orange-300: #fdba74;
+  --color-orange-400: #fb923c;
+
   --color-font-light: #e0e0e2;
   --color-font-sub: #807d81;
   --color-font-dark: #373845;
 
   --color-link: #3190ff;
-
-  --color-orange-100: #fff7ed;
-  --color-orange-300: #fdba74;
-  --color-orange-400: #fb923c;
 
   --color-profile-primary: #664bf5;
   --color-profile-secondary: #cc56ef;

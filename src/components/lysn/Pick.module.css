@@ -21,3 +21,9 @@
   opacity: 0.15;
   background-color: var(--color-lysn-primary);
 }
+
+@media screen and (max-width: 37.5rem) {
+  #pick {
+    font-size: var(--font-min);
+  }
+}

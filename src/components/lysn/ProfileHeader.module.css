@@ -65,3 +65,19 @@
   object-fit: cover;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 37.5rem) {
+  .img-wrap {
+    width: 2.75rem;
+    height: 2.75rem;
+    border: 1px solid transparent;
+  }
+
+  .img-wrap img {
+    padding: 2px;
+  }
+
+  .name {
+    font-size: var(--font-min);
+  }
+}

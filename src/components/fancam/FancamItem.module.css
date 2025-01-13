@@ -63,3 +63,10 @@
   background-color: var(--color-base-0);
   z-index: 3;
 }
+
+@media screen and (max-width: 37.5rem) {
+  .title a:link,
+  .title a:visited {
+    font-size: var(--font-min);
+  }
+}

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import styles from './Sidebar.module.css';
 import MobileLinkList from '../components/link/MobileLinkList';
 import SpinSpin from '../icons/SpinSpin';
+import XIcon from './XIcon';
 
 function Sidebar({ onClose }) {
   return (
@@ -30,9 +31,15 @@ function Sidebar({ onClose }) {
           <div className={styles.divider} />
           <div className={styles.info}>
             <h4>contact</h4>
-            <a href="https://spinspin.net/ovxbjh" target="_blank">
-              <SpinSpin />
-            </a>
+            <div className={styles.icons}>
+              <a href="https://spinspin.net/ovxbjh" target="_blank">
+                <SpinSpin />
+              </a>
+              <span>or</span>
+              <a href="https://x.com/ovxbjh" target="_blank">
+                <XIcon />
+              </a>
+            </div>
           </div>
         </div>
       </motion.div>

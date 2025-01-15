@@ -37,7 +37,7 @@
   font-size: var(--font-sm);
   font-weight: 600;
   text-overflow: ellipsis;
-  line-height: var(--line-h-m);
+  line-height: 1.2;
   word-break: break-all;
   white-space: pre-wrap;
   -webkit-box-orient: vertical;

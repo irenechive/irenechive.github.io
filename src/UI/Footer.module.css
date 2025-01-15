@@ -19,9 +19,24 @@
   align-items: center;
 }
 
+.col--1 a:link,
+.col--1 a:visited {
+  font-size: calc(var(--font-min) - 2px);
+  font-weight: 600;
+}
+
+.col--1 a:link > strong,
+.col--1 a:visited > strong {
+  font-weight: 900;
+}
+
 .col--2 {
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.5px;
+}
+
+.col--2 > strong {
+  font-weight: 800;
 }
 
 .divider {

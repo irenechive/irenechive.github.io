@@ -10,6 +10,11 @@ export default [
     subLink: [],
   },
   {
+    id: 'twitter',
+    name: 'Twitter',
+    subLink: [],
+  },
+  {
     id: 'insta',
     name: 'Instagram',
     subLink: [
@@ -24,14 +29,18 @@ export default [
     ],
   },
   {
-    id: 'contents',
-    name: 'Contents',
-    subLink: [],
-  },
-  {
-    id: 'fancam',
-    name: 'Fancam',
-    subLink: [],
+    id: 'youtube',
+    name: 'YouTube',
+    subLink: [
+      {
+        id: 'contents',
+        name: 'Contents',
+      },
+      {
+        id: 'fancam',
+        name: 'Fancam',
+      },
+    ],
   },
   {
     id: 'lysn',

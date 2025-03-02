@@ -9,10 +9,10 @@ import styles from './FeedItem.module.css';
 
 function FeedItem({ item }) {
   let thumbIcon = null;
-  const { id, thumbnail, icon, created_at } = item;
+  const { id, thumbnail, created_at, data } = item;
 
-  if (icon === 'video') thumbIcon = <VideoIcon />;
-  if (icon === 'slide') thumbIcon = <SlideIcon />;
+  if (data?.length > 1) thumbIcon = <SlideIcon />;
+  if (data?.length === 1 && data[0].type === 'video') thumbIcon = <VideoIcon />;
 
   return (
     <li className={styles.feed}>

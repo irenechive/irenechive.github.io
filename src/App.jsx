@@ -7,6 +7,8 @@ import AppLayout from './UI/AppLayout';
 import Category from './pages/Category';
 import Home from './pages/Home';
 import Post from './pages/Post';
+import SEOMetaTag from './meta/SEOMetaTag';
+import { Toaster } from 'react-hot-toast';
 
 const Animated = () => {
   const location = useLocation();
@@ -34,11 +36,35 @@ function App() {
   });
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter basename="/">
-        <Animated />
-      </BrowserRouter>
-    </QueryClientProvider>
+    <>
+      <SEOMetaTag />
+      <QueryClientProvider client={queryClient}>
+        <Toaster
+          position="top-center"
+          gutter={12}
+          containerStyle={{ margin: '0.5rem' }}
+          toastOptions={{
+            success: {
+              duration: 6000,
+            },
+            error: {
+              duration: 7000,
+            },
+            style: {
+              fontSize: 'var(--font-md)',
+              maxWidth: '31.25rem',
+              padding: '1rem 1.5rem',
+              backgroundColor: 'var(--color-base-0)',
+              color: 'var(--color-font-dark)',
+              zIndex: 999999999,
+            },
+          }}
+        />
+        <BrowserRouter basename="/">
+          <Animated />
+        </BrowserRouter>
+      </QueryClientProvider>
+    </>
   );
 }
 

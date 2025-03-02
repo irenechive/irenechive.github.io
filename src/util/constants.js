@@ -9,3 +9,5 @@ export const STAR_PAGE_SIZE = 10;
 export const CONTENT_PAGE_SIZE = 12;
 
 export const FANCAM_PAGE_SIZE = 12;
+
+export const TWEET_PAGE_SIZE = 18;

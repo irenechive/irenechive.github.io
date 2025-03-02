@@ -26,14 +26,14 @@ function Pagination({ count, size }) {
   for (let i = firstPage; i <= lastPage; i++) pageNumbers.push(i);
 
   function nextPage() {
-    const next = currentPage === maxPage ? currentPage : currentPage + 1;
+    const next = +currentPage === maxPage ? +currentPage : +currentPage + 1;
     setCurrentPage(next);
     searchParams.set('page', next);
     setSearchParams(searchParams);
   }
 
   function prevPage() {
-    const prev = currentPage === 1 ? currentPage : currentPage - 1;
+    const prev = +currentPage === 1 ? +currentPage : +currentPage - 1;
     setCurrentPage(prev);
     searchParams.set('page', prev);
     setSearchParams(searchParams);

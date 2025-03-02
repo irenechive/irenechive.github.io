@@ -21,16 +21,14 @@ function InstagramLayout({ children }) {
   return (
     <>
       {!isLoading && note && note?.show && <NoteBlock data={note} />}
-      <div>
-        <header className={styles.header}>
-          <InstagramTab curTab={curTab} />
-          <div className={styles.wrap}>
-            <InstagramDropDown curMember={curMember} />
-            <InstagramDropDownYear curTab={curTab} curMember={curMember} curYear={curYear} />
-          </div>
-        </header>
-        {children}
-      </div>
+      <header className={styles.header}>
+        <InstagramTab curTab={curTab} />
+        <div className={styles.wrap}>
+          <InstagramDropDown curMember={curMember} />
+          <InstagramDropDownYear curTab={curTab} curMember={curMember} curYear={curYear} />
+        </div>
+      </header>
+      {children}
     </>
   );
 }

@@ -8,6 +8,7 @@ import LysnDetail from './LysnDetail';
 import RookiesDetail from './RookiesDetail';
 import StaffDiaryDetail from './StaffDiaryDetail';
 import StoriesDetail from './StoriesDetail';
+import TweetDetail from './TweetDetail';
 
 function Post() {
   const { category } = useParams();
@@ -20,6 +21,7 @@ function Post() {
   if (category === 'lysn') return <LysnDetail />;
   if (category === 'rookies') return <RookiesDetail />;
   if (category === 'stories') return <StoriesDetail account="renebaebae" />;
+  if (category === 'twitter') return <TweetDetail />;
 }
 
 export default Post;

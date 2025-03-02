@@ -1,9 +1,12 @@
+import { Outlet } from 'react-router-dom';
+
+import TopButton from '../components/TopButton';
+
+import Nav from './Nav';
+import Footer from './Footer';
 import Transition from './Transition';
 
 import styles from './AppLayout.module.css';
-import { Outlet } from 'react-router-dom';
-import Nav from './Nav';
-import Footer from './Footer';
 
 function AppLayout() {
   return (
@@ -12,6 +15,7 @@ function AppLayout() {
         <Nav />
         <Outlet />
         <Footer />
+        <TopButton />
       </div>
     </Transition>
   );

@@ -24,7 +24,7 @@
 }
 
 @media screen and (max-width: 52.5rem) {
-  #handle {
+  .handle {
     font-size: var(--font-min);
   }
 }

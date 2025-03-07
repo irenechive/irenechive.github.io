@@ -6,8 +6,9 @@
 .link:link,
 .link:visited {
   padding: 0.25rem 0.5rem;
-  font-size: calc(var(--font-min) - 1px);
-  font-weight: 600;
+  font-size: var(--font-min);
+  font-weight: 700;
+  font-family: var(--font-serif);
   text-transform: uppercase;
   border: 1px solid transparent;
   border-radius: 1000px;

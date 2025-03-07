@@ -1,3 +1,6 @@
+import SpinSpin from '../icons/SpinSpin';
+import XIcon from '../icons/XIcon';
+
 import styles from './Footer.module.css';
 
 function Footer() {
@@ -11,7 +14,17 @@ function Footer() {
           </a>
         </div>
         <div className={styles['col--2']}>
-          for <strong>IRENE</strong>
+          {/* for <strong>IRENE</strong> */}
+          <div className={styles.icons}>
+            contact
+            <a href="https://spinspin.net/ovxbjh" target="_blank">
+              <SpinSpin />
+            </a>
+            <span>or</span>
+            <a href="https://x.com/ovxbjh" target="_blank">
+              <XIcon />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

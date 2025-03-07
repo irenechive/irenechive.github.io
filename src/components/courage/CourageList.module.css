@@ -65,3 +65,15 @@
     gap: 1.5rem 1rem;
   }
 }
+
+@media screen and (max-width: 37.5rem) {
+  .title a:link,
+  .title a:visited {
+    font-size: var(--font-min);
+  }
+
+  .notice,
+  .info {
+    font-size: var(--font-min);
+  }
+}

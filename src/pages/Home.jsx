@@ -1,27 +1,28 @@
-import { Link } from 'react-router-dom';
-
-import mainImg from '../assets/main.jpg';
+import mainImg from '../assets/main-2.jpg';
+import IreneIcon from '../icons/IreneIcon';
 
 import Transition from '../UI/Transition';
-import ChevronRightIcon from '../icons/ChevronRightIcon';
 
 import styles from './Home.module.css';
 
 function Home() {
   return (
     <Transition id={styles.home}>
-      <div className={styles['row--1']}>
-        <img className={styles.logo} src="logo.png" />
-        <p>
-          in the depths of uncertainty,
+      <div className={styles['col--1']}>
+        <h1 className={styles.title}>
+          irene<span>(chive)</span>
+        </h1>
+        <p className={styles.desc}>
+          hey, remember those days it hasn’t changed at all
           <br />
-          we find the strength to bloom
+          it’s just the same as it was back then the shining eyes are no different
+          <br />
+          look, we are standing together towards that beautiful castle on the start line
         </p>
-        <Link to="courage" className={styles.courage}>
-          <span>🍀 do you need courage?</span> <ChevronRightIcon />
-        </Link>
+        <IreneIcon />
+        <p className={styles['desc--btm']}>( in the depths of uncertainty, we find the strength to bloom )</p>
       </div>
-      <div className={styles['row--2']}>
+      <div className={styles['col--2']}>
         <img src={mainImg} />
       </div>
     </Transition>

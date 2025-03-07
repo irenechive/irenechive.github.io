@@ -20,7 +20,6 @@ function Nav() {
     <>
       <nav id={styles.nav}>
         <div className={styles.content}>
-          <Logo />
           <LinkList />
           <button className={styles.btn} onClick={handleToggle}>
             <MenuIcon />

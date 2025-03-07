@@ -9,18 +9,18 @@
 
 .content {
   width: 92dvw;
-  height: calc(100dvh - 7.25rem);
+  height: 100dvh;
   max-width: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  top: 7.25rem;
+  top: 0;
   left: 0;
   background-color: var(--color-base-0);
   overflow-x: hidden;
   overflow-y: scroll;
-  z-index: 9999;
+  z-index: 100000;
 }
 
 .contact {
@@ -75,11 +75,5 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.25);
-}
-
-@media screen and (max-width: 45rem) {
-  .content {
-    height: calc(100dvh - 5rem);
-    top: 5rem;
-  }
+  z-index: 99999;
 }

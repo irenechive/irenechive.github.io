@@ -1,0 +1,133 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --font: 'Pretendard Variable', sans-serif;
+  --font-cinzel: 'Cinzel', var(--font);
+  --font-serif: 'Cormorant', var(--font);
+
+  --font-min: 0.75rem;
+  --font-sm: 0.813rem;
+  --font-md: 0.875rem;
+  --font-lg: 0.938rem;
+  --font-max: 1.125rem;
+
+  --color-base-0: #fff;
+  --color-base-50: #f6f6f9;
+  --color-base-100: #f3f4f6;
+  --color-base-200: #e2e8f0;
+  --color-base-900: #373845;
+
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-400: #a1a1aa;
+
+  --color-font-light: #e0e0e2;
+  --color-font-sub: #807d81;
+  --color-font-dark: #373845;
+
+  --color-link: #3190ff;
+
+  --color-red-100: oklch(0.936 0.032 17.717);
+
+  --color-profile-primary: #664bf5;
+  --color-profile-secondary: #cc56ef;
+
+  --color-lysn-primary: #5a42f5;
+  --color-lysn-secondary: #c68ff8;
+
+  --color-lysn-comment: #fafafa;
+
+  --duration: 0.3s;
+  --timing-fn: ease;
+  --transition: var(--duration) var(--timing-fn);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+strong {
+  font-weight: 600;
+}
+
+svg {
+  width: var(--font-md);
+  height: var(--font-md);
+  color: var(--color-font-dark);
+  transition: color var(--transition);
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+}
+
+strong {
+  font-weight: 600;
+}
+
+textarea,
+input {
+  color: inherit;
+  font: inherit;
+  border: none;
+  border-radius: unset;
+  outline: none;
+  background: none;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+body {
+  color: var(--color-font-dark);
+  font-size: var(--font-md);
+  font-family: var(--font);
+  line-height: 1;
+  background-color: var(--color-base-0);
+}

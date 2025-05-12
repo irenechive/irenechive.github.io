@@ -1,0 +1,59 @@
+.btn,
+.link:link,
+.link:visited,
+.sub:link,
+.sub:visited {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.75rem;
+  font-size: var(--font-min);
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-base-200);
+}
+
+.sub:link,
+.sub:visited {
+  justify-content: flex-start;
+}
+
+.sub:link > span,
+.sub:visited > span {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 1000px;
+}
+
+.btn > span,
+.link:link > span,
+.link:visited > span {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 1000px;
+}
+
+.btn.active > span,
+.link.active:link > span,
+.link.active:visited > span,
+.sub.active:link > span,
+.sub.active:visited > span {
+  border: 1px solid var(--color-base-900);
+}
+
+.btn > svg {
+  transition: all var(--transition);
+}
+
+.btn.toggle > svg {
+  transform: rotate(45deg);
+}
+
+.divider {
+  width: 0.5rem;
+  height: 2px;
+  margin-left: 0.75rem;
+  background-color: var(--color-base-900);
+}

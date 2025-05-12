@@ -1,0 +1,15 @@
+.btn {
+  width: 2rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  aspect-ratio: 1;
+  border: 1px solid var(--color-base-900);
+  border-radius: 50%;
+  background-color: var(--color-base-0);
+  opacity: 0;
+  z-index: 999;
+}

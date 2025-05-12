@@ -1,0 +1,29 @@
+#pick {
+  padding: 1.15rem 1.5rem;
+  font-size: var(--font-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-base-200);
+}
+
+#pick > strong {
+  position: relative;
+  font-weight: 800;
+}
+
+#pick > strong::before {
+  content: '';
+  width: calc(100% + 34px);
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.15;
+  background-color: var(--color-lysn-primary);
+}
+
+@media screen and (max-width: 37.5rem) {
+  #pick {
+    font-size: var(--font-min);
+  }
+}

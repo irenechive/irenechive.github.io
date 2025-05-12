@@ -1,0 +1,56 @@
+.thumb:link,
+.thumb:visited {
+  display: block;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--color-base-900);
+  overflow: hidden;
+}
+
+.thumb > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transform: scale(1.005);
+  transition: all var(--transition);
+}
+
+.thumb:hover > img,
+.thumb:active > img {
+  transform: scale(1.1);
+}
+
+.title {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.title a:link,
+.title a:visited {
+  display: -webkit-box;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  word-break: break-all;
+  white-space: pre-wrap;
+  -webkit-box-orient: vertical;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.date {
+  display: block;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: var(--color-font-sub);
+  font-size: var(--font-min);
+}
+
+@media screen and (max-width: 37.5rem) {
+  .title a:link,
+  .title a:visited {
+    font-size: var(--font-min);
+  }
+}

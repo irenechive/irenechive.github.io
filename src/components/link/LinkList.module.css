@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 52.5rem) {
+  .list {
+    display: none;
+  }
+}

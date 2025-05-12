@@ -1,0 +1,16 @@
+#app {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 5rem minmax(0, 1fr) 4.25rem;
+}
+
+#app:has([id*='home']) {
+  height: 100dvh;
+}
+
+@media screen and (max-width: 52.5rem) {
+  #app {
+    grid-template-rows: 3rem 3rem minmax(0, 1fr) 4.25rem;
+  }
+}

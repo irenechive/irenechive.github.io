@@ -1,0 +1,26 @@
+#contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem;
+}
+
+.searchlist {
+  display: block;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.searchlist > strong {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 52.5rem) {
+  #contents {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+  }
+
+  .searchlist {
+    font-size: var(--font-min);
+  }
+}

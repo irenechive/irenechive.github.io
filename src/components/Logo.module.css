@@ -1,0 +1,19 @@
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.col--1 {
+  color: var(--color-base-0);
+  padding: 0.15rem 0.35rem;
+  background-color: var(--color-base-900);
+}
+
+@media screen and (max-width: 45rem) {
+  #logo {
+    font-size: 1rem;
+  }
+}

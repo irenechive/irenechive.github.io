@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+import Label from '../Label';
+
 import SlideIcon from '../../icons/SlideIcon';
 import VideoIcon from '../../icons/VideoIcon';
 
@@ -18,7 +20,7 @@ function TweetItem({ tweet }) {
     <li className={styles.tweet}>
       <Link className={styles.thumb} to={`${id}`}>
         {icon}
-        <time className={styles.date}>{formatDate(created_at)}</time>
+        <Label label={formatDate(created_at)} />
         <img src={thumbnail} />
       </Link>
     </li>

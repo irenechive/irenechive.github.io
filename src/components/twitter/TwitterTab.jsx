@@ -11,6 +11,9 @@ function TwitterTab({ curTab }) {
       <NavLink to={'?filter=rv'} className={curTab === 'rv' ? `${styles.tab} ${styles.active}` : styles.tab}>
         RV
       </NavLink>
+      <NavLink to={'?filter=irene-seulgi'} className={curTab === 'irene-seulgi' ? `${styles.tab} ${styles.active}` : styles.tab}>
+        I&S
+      </NavLink>
       <NavLink to={'?filter=album'} className={curTab === 'album' ? `${styles.tab} ${styles.active}` : styles.tab}>
         Album
       </NavLink>

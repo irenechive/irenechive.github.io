@@ -16,9 +16,7 @@ function TweetPost() {
     <>
       <MoveBack />
       <Tweet tweet={tweet} />
-      {tweet.thread &&
-        tweet.thread.length > 0 &&
-        tweet.thread.map(thread => <Tweet key={thread.id} tweet={thread} thread />)}
+      {tweet.thread && tweet.thread.length > 0 && tweet.thread.map(thread => <Tweet key={thread.id} tweet={thread} thread />)}
     </>
   );
 }

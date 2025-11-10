@@ -5,6 +5,7 @@ import SlideIcon from '../../icons/SlideIcon';
 import { formatDate } from '../../util/helper';
 
 import styles from './StoryItem.module.css';
+import Label from '../Label';
 
 function StoryItem({ story }) {
   let thumbIcon;
@@ -16,7 +17,7 @@ function StoryItem({ story }) {
     <li className={styles.story}>
       <Link className={styles.thumb} to={`${id}`}>
         {thumbIcon}
-        <time className={styles.date}>{formatDate(created_at)}</time>
+        <Label label={formatDate(created_at)} />
         <img src={thumbnail} />
       </Link>
     </li>

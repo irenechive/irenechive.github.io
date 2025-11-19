@@ -37,6 +37,12 @@
   margin-top: 2rem;
 }
 
+.footer > div {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .date {
   padding: 0.25rem 0.5rem;
   font-size: var(--font-min);
@@ -45,6 +51,7 @@
   border-radius: 1000px;
 }
 
+.source,
 .source:link,
 .source:visited {
   display: flex;
@@ -52,6 +59,14 @@
   gap: 0.5rem;
   font-size: var(--font-min);
   font-weight: 700;
+}
+
+.slash {
+  font-weight: 400;
+}
+
+.slash:last-child {
+  display: none !important;
 }
 
 @media screen and (max-width: 37.5rem) {

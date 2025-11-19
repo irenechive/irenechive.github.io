@@ -14,7 +14,7 @@ function FeedPost() {
 
   if (isLoading) return <Loader />;
 
-  const { created_at, content, data, source } = post;
+  const { created_at, content, data, source, hq } = post;
 
   function contentMarkup(type, data) {
     if (type === 'video')
@@ -27,6 +27,8 @@ function FeedPost() {
     if (type === 'image') return <img src={data} />;
   }
 
+  console.log(hq.at(0).link);
+
   return (
     <article id={styles.article}>
       <div className={styles.data}>
@@ -37,10 +39,32 @@ function FeedPost() {
       {content && <div className={styles.content} dangerouslySetInnerHTML={{ __html: content }} />}
       <footer className={styles.footer}>
         <time className={styles.date}>{formatDate(created_at)}</time>
-        <a className={styles.source} href={source} target="_blank">
-          <LinkIcon />
-          <span>Original source</span>
-        </a>
+        <div>
+          {hq && hq.length < 2 && (
+            <a className={styles.source} href={hq.at(0).link}>
+              <LinkIcon />
+              <span>HQ source</span>
+            </a>
+          )}
+          {hq && hq.length > 1 && (
+            <span className={styles.source}>
+              <LinkIcon />
+              <span>HQ source: </span>
+              {hq.map((data, i) => (
+                <>
+                  <a key={data.link} className={styles['source-link']} href={data.link}>
+                    {i + 1}
+                  </a>
+                  <span className={styles.slash}>/</span>
+                </>
+              ))}
+            </span>
+          )}
+          <a className={styles.source} href={source} target="_blank">
+            <LinkIcon />
+            <span>Original source</span>
+          </a>
+        </div>
       </footer>
     </article>
   );

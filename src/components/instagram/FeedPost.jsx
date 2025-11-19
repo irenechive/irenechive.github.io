@@ -27,8 +27,6 @@ function FeedPost() {
     if (type === 'image') return <img src={data} />;
   }
 
-  console.log(hq.at(0).link);
-
   return (
     <article id={styles.article}>
       <div className={styles.data}>

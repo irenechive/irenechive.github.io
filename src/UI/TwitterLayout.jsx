@@ -22,7 +22,9 @@ function TwitterLayout({ children }) {
     <>
       {!isLoading && note && note?.show && <NoteBlock data={note} />}
       <header className={styles.header}>
-        <TwitterTab curTab={curTab} />
+        <div className={styles['tab-header']}>
+          <TwitterTab curTab={curTab} />
+        </div>
         <div className={styles.wrap}>
           <TwitterDropDownEra curEra={curEra} curTab={curTab} />
           <TwitterDropDownYear minYear={2017} curTab={curTab} curYear={curYear} />

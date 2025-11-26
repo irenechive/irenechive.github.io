@@ -1,13 +1,17 @@
 .header {
+  margin-bottom: 2rem;
+}
+
+.tab-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .wrap {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 0.5rem;
 }

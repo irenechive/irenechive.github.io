@@ -17,4 +17,5 @@ export default [
   { id: 16, param: 'cosmic', name: 'Cosmic' },
   { id: 17, param: 'like a flower', name: 'Like A Flower' },
   { id: 18, param: 'tilt', name: 'TILT' },
+  { id: 19, param: 'smcu', name: 'SMCU' },
 ];

@@ -6,7 +6,7 @@ function ProfileHeader({ date }) {
   return (
     <div className={styles.header}>
       <div className={styles['img-wrap']}>
-        <img src="https://i.ibb.co/J2vBMyX/irene.jpg" />
+        <img src="https://res.cloudinary.com/dw4k3jzyz/image/upload/v1764134346/irene_tzxbmd.jpg" />
       </div>
       <div className={styles.info}>
         <h4 className={styles.name}>

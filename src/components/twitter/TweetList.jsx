@@ -21,7 +21,7 @@ function TweetList() {
       </p>
       <ul id={styles.tweet}>
         {tweets.length > 0 && tweets.map(tweet => <TweetItem key={tweet.id} tweet={tweet} />)}
-        {tweets.length === 0 && <p className={styles.onerror}>자료가 순차적으로 추가될 예정입니다.</p>}
+        {tweets.length === 0 && <p className={styles.onerror}>해당 필터로 등록된 자료가 없습니다.</p>}
       </ul>
       <Pagination count={count || 1} size={TWEET_PAGE_SIZE} />
     </>

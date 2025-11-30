@@ -34,9 +34,13 @@ function FeedPost() {
           <Fragment key={dt.id}>{contentMarkup(dt.type, dt.data)}</Fragment>
         ))}
       </div>
-      {content && <div className={styles.content} dangerouslySetInnerHTML={{ __html: content }} />}
+      {content && (
+        <div className={styles.content}>
+          <div dangerouslySetInnerHTML={{ __html: content }} />
+          <time className={styles.date}>{formatDate(created_at)}</time>
+        </div>
+      )}
       <footer className={styles.footer}>
-        <time className={styles.date}>{formatDate(created_at)}</time>
         <div>
           {hq && hq.length < 2 && (
             <a className={styles.source} href={hq.at(0).link}>

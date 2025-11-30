@@ -4,7 +4,6 @@ import { AnimatePresence } from 'framer-motion';
 import Sidebar from './Sidebar';
 
 import LinkList from '../components/link/LinkList';
-import Logo from '../components/Logo';
 
 import MenuIcon from '../icons/MenuIcon';
 

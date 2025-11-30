@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion';
 
-import styles from './Sidebar.module.css';
 import MobileLinkList from '../components/link/MobileLinkList';
-import SpinSpin from '../icons/SpinSpin';
-import XIcon from '../icons/XIcon';
+
+import styles from './Sidebar.module.css';
 
 function Sidebar({ onClose }) {
   return (

@@ -38,17 +38,19 @@
 }
 
 .footer > div {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
 }
 
 .date {
-  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--color-font-sub);
   font-size: var(--font-min);
-  font-weight: 700;
-  border: 1px solid var(--color-base-900);
-  border-radius: 1000px;
+  font-weight: 500;
 }
 
 .source,
@@ -59,6 +61,11 @@
   gap: 0.5rem;
   font-size: var(--font-min);
   font-weight: 700;
+}
+
+.source:last-child:link,
+.source:last-child:visited {
+  margin-left: auto;
 }
 
 .slash {
@@ -72,5 +79,9 @@
 @media screen and (max-width: 37.5rem) {
   .content {
     font-size: var(--font-min);
+  }
+
+  .date {
+    font-size: calc(var(--font-min) - 1px);
   }
 }
